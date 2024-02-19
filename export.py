@@ -25,7 +25,6 @@ class test:
 		
 		"""
 		
-		print(glob.context)
 		
 		
 		for base, lang, key, value in glob.context:
@@ -52,8 +51,6 @@ class test:
 							
 	def group(key, value, base):
 		
-		
-		# print(key, value, )
 		
 		"""
 		

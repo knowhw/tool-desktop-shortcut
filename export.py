@@ -5,7 +5,7 @@ class test:
 	
 	def print_file():
 		
-		string = []
+		checklist = []
 		
 		
 		"""
@@ -35,9 +35,9 @@ class test:
 			
 			if not key is None:
 			
-				if not check in string: 
-					string.append(check)
-					# string listesine baska bir isim var
+				if not check in checklist: 
+					checklist.append(check)
+					
 					
 					yield check
 				

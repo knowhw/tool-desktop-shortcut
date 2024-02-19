@@ -25,7 +25,7 @@ Keywords=Text;Editor;
 ## #Tool usage
 
 ~~~python
-
+...
 ~~~
 
 

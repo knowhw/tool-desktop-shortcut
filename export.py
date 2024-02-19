@@ -3,7 +3,7 @@ from desktop import glob
 
 class test:		
 	
-	def file_print():
+	def print_file():
 		
 		string = []
 		

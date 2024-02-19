@@ -1,15 +1,12 @@
 
-
-from desktop import glob
+import os
 from desktop import export
-# from desktop import translate
+from desktop import glob
+
 
 class desktop:
 
 	def path(name):
-		
-		import os
-		
 		
 		# global path_desktop_items
 		path_desktop_items = [ os.path.realpath(item) 

@@ -25,25 +25,31 @@ class test:
 		
 		"""
 		
+		print(glob.context)
+		
+		
 		for base, lang, key, value in glob.context:
 			
 			check = "["+ base +"]"
 			
 			
 			
-			if not check in string: 
-				string.append(check)
-				# string listesine baska bir isim var
-				
-				yield check
+			if not key is None:
 			
-			else:
-				if lang == glob.LANGUAGE: 
-					yield "%s=%s" % (key, value)
-				else:
-					yield "%s[%s]=%s" % (key, lang, value)
-					# Sun Feb 18 19:28:16 CST 2024
+				if not check in string: 
+					string.append(check)
+					# string listesine baska bir isim var
 					
+					yield check
+				
+				else:
+				
+						if lang == glob.LANGUAGE: 
+							yield "%s=%s" % (key, value)
+						else:
+							yield "%s[%s]=%s" % (key, lang, value)
+							# Sun Feb 18 19:28:16 CST 2024
+							
 	def group(key, value, base):
 		
 		
@@ -101,18 +107,17 @@ class test:
 		
 	def string(key, value, base=None, index=None, action=None):
 		
-		
 		if action:
-			
-			
 			
 			action = "%s %s" % (glob.action, action)
 			
+			
 			if not index:
+				
 				
 				base = [action, None, None, None]
 				# base: Desktop Action test None None None
-				glob.extend([base, ["%s %s" % (glob.action, action), glob.LANGUAGE, key, value]])
+				glob.extend([base, ["%s" % action, glob.LANGUAGE, key, value]])
 				# base yok
 			else:
 
@@ -129,11 +134,11 @@ class test:
 					glob.insert(min(index)+1, [action, glob.LANGUAGE, key, value])
 					# base var key yok
 					
-					
+				
 		else:
 			
 		
-			if not index is not None:
+			if not iex is not None:
 				glob.context.insert(glob.index.entry + 1, [glob.entry, glob.LANGUAGE, key, value] )
 				""" key yoksa """
 			else:

@@ -5,8 +5,7 @@ class test:
 	
 	def print_file():
 		
-		checklist = []
-		
+		arr = []
 		
 		"""
 		
@@ -22,36 +21,25 @@ class test:
 		[Desktop Action X]
 		Name=test
 		
-		
 		"""
 		
 		
-		
-		for base, lang, key, value in glob.context:
+		for (base, lang,key, 
+	value ) in glob.context:
 			
-			check = "["+ base +"]"
-			
-			
-			
-			if not key is None:
-			
-				if not check in checklist: 
-					checklist.append(check)
-					
-					
-					yield check
+			if lang is None and key is None and value is None: 
+				yield "[%s]" % (base)
 				
-				else:
+			else:
 				
-						if lang == glob.LANGUAGE: 
-							yield "%s=%s" % (key, value)
-						else:
-							yield "%s[%s]=%s" % (key, lang, value)
-							# Sun Feb 18 19:28:16 CST 2024
-							
+				if lang == glob.LANGUAGE: 
+					
+						yield "%s=%s" % (key, value)
+				else: yield "%s[%s]=%s" % (key, lang, value)
+				
 	def group(key, value, base):
 		
-		
+
 		"""
 		
 		[Desktop Entry]
@@ -71,6 +59,10 @@ class test:
 		
 		"""
 		
+		googleapis = "/translate_a/single?client=gtx&dt=t&"
+		query = "http://translate.googleapis.com%ssl=auto&tl=%s&q=%s"
+		
+		
 		
 		for lang in [ item.get(glob._) for item in glob.lang.findall('name') if item.get(glob._) ]:
 		
@@ -79,14 +71,11 @@ class test:
 			exists = [  item for item in glob.context if item [0:3] == [ base, lang, key ] ]
 		
 		
-		
 			if not exists:
 				
 				
-				googleapis = "/translate_a/single?client=gtx&dt=t&"
-				
-				query = "http://translate.googleapis.com%ssl=auto&tl=%s&q=%s" % (googleapis, lang, value)
-				response = glob.loads(glob.urllib.request.urlopen(query) .read()) [-9][-1][0]
+				query = query % (googleapis, lang, value)
+				response = glob.loads(glob.urllib.request.urlopen(query).read()) [-9][-1][0]
 				# base, lang, key, value
 				
 				index = [  index for index, item in enumerate(glob.context) 
@@ -96,13 +85,14 @@ class test:
 				
 				glob.insert( index [0], [ base, lang, key, response ])
 				# print(base, lang, key, response)
-				
-				
-				
-				
+
 		return test
 		
-	def string(key, value, base=None, index=None, action=None):
+		
+	def string(key=None, value=None, base=None, index=None, action=None):
+		# export.test.string(key, value, base=None, index=index, action=action)
+		
+		
 		
 		if action:
 			
@@ -122,6 +112,9 @@ class test:
 				exists = [ index for index, item in enumerate(glob.context) 
 				if action  == item [0] and item[2] == key ]
 				# base var mi?
+				
+				
+				
 				if exists:
 					glob.context [exists [0]] [-1] = value
 					# base var, key var
@@ -134,16 +127,15 @@ class test:
 				
 		else:
 			
-		
-			if not iex is not None:
+			if not index is not None:
 				glob.context.insert(glob.index.entry + 1, [glob.entry, glob.LANGUAGE, key, value] )
 				""" key yoksa """
 			else:
 				
-				
+
 				glob.context[index][-1] = value
 				""" key varsa """
-
+				
 		return test
 	
 	def file_update(self):

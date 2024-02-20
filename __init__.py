@@ -1,12 +1,16 @@
 
-import os
-from desktop import export
+
 from desktop import glob
+from desktop import export
+# from desktop import translate
 
-
+	
 class desktop:
 
 	def path(name):
+		
+		import os
+		
 		
 		# global path_desktop_items
 		path_desktop_items = [ os.path.realpath(item) 
@@ -24,9 +28,12 @@ class desktop:
 			""" 'path':'%s/%s%s' % (glob.appdir, Exec, extension) """
 		
 		return dictionary.get(name)
-
+		
+class getitem(dict):
+	def __getitem__(self, kelime):
+		return super().__getitem__(kelime) if kelime in self else None
 class desk:
-
+	
 	class entry:
 		
 		def getindex(key):
@@ -42,12 +49,14 @@ class desk:
 			return export.test.group(key, value, desk.entry)
 			# key, value, base=None, index=None, action=None
 
-		def set(key, value):
+
+		def set(key=None, value=None):
 			
 			index = desk.entry.getindex(key)
-			return export.test.string(key, value, index=index)
+			return export.test.string(key=key, value=value, index=index)
 			# key, value, base=None, index=None, action=None
 			# glob.context
+	
 
 		def add(key, value):
 			return desk.entry.set(key, value)
@@ -77,28 +86,29 @@ class desk:
 			return value
 			
 	class action:
-	
-		def getindex(key):
+		
+		def getindex(action):
+			# Mon Feb 19 08:03:03 CST 2024
 			
 			try:
 				return [ index for index, item in enumerate(glob.context) 
-			if "%s %s" % (glob.action, desk.action.base.key)  == item [0] ]
-				""" group disinda kalan """
+			if "%s %s" % (glob.action, action)  == item [0] ]
 			except:
 				return None
+				# action: defactoring
 				
 		def group(key, value):
 			return export.test.group(key, value, desk.action)
 			# key, value, base=None, index=None, action=None
 			
+			
 		def set(key, value, action):
-
-			index = desk.action.getindex(key)
+			index = desk.action.getindex(action)
 		
-			return export.test.string(key, value, index=index, action=action)
-			# desk.action.set("Name", "test", action="X")
+			return export.test.string(key, value, base=None, index=index, action=action)
 			
 			"""
+			
 			[Desktop Entry]
 			Name=test
 			Icon=geany
@@ -108,6 +118,7 @@ class desk:
 			[Desktop Action globalAI]
 			Name=test
 			Exec=/usr/bin/test
+			
 			"""
 			
 			# glob.context
@@ -139,12 +150,21 @@ class desk:
 			
 			return value
 class Base:
+	Entry = getitem()
+	
 	entry = desk.entry
 	action = desk.action
 	
 	
+	def set():
+		
+		for key, value in Base.Entry.items():
+			desk.entry.set(key=key, value=value)
+	
+		return export.test
 def content(name):
-
+	
+	
 	glob.path = desktop.path(name)
 	
 			
@@ -207,12 +227,15 @@ def content(name):
 				glob.push([ glob.select, glob.LANGUAGE, key, value ])
 
 	return Base
+	
+	
+
 
 def create():
 	""" calisma klasorunde kisayol olustur """
 	
+
 	
-	
-	
-	
+
+  
 	

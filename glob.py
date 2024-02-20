@@ -43,8 +43,8 @@ LANGUAGE=os.getenv("LANGUAGE")
 class select:
 	base = ''
 	# glob.select.base
-	
-	
+
+
 _,path='{http://www.w3.org/XML/1998/namespace}lang',os.path.join(os.path.dirname(__file__), 'lang.xml')
 lang=ET.parse(path)
 def head(base):

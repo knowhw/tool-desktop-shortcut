@@ -25,7 +25,6 @@ from desktop import content
 # test = desk.action.set(key="Name", value="test", action="X")
 
 
-
 # for item in test.print_file():
 #	print(item)
 
@@ -41,8 +40,6 @@ from desktop import content
 # test = desk.set()
 
 
-
-
 # for item in test.print_file():
 #		print(item)
 
@@ -56,7 +53,6 @@ from desktop import content
 # test = desk.action.set(key="Icon", value="myapp", action="X")
 
 # desk.entry.pop("Name")
-
 
 
 # for item in test.print_file():

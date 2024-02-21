@@ -27,8 +27,8 @@ class desktop:
 		return dictionary.get(name)
 		
 class getitem(dict):
-	def __getitem__(self, kelime):
-		return super().__getitem__(kelime) if kelime in self else None
+	def __getitem__(self, key):
+		return super().__getitem__(key) if key in self else None
 class desk:
 	
 	class entry:

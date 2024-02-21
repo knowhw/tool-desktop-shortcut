@@ -48,6 +48,9 @@ class desk:
 				
 		
 		def group(key, value):
+			
+			
+			
 			return export.test.group(key, value, desk.entry)
 			# key, value, base=None, index=None, action=None
 
@@ -64,17 +67,17 @@ class desk:
 			return desk.entry.set(key, value)
 		def pop(key):
 			
-
 			index = [ index for index, item in enumerate(glob.context) 
-			if glob.entry == item[0] and key == item [-2] ]
+			if glob.entry == item [0] and key == item [-2] ]
 			# ['Desktop Entry', 'en_US', 'Version', '1.0'], [], [], ['Desktop Entry', 'en_US', 'Type', 'Application'], []
-			
+
 			
 			for index in index:
 				# index: [2, 3, 5]
 				
 				del glob.context [index] [:]
 				
+
 			return glob
 		def remove(key):
 			return desk.entry.pop(key)
@@ -166,7 +169,8 @@ class Base:
 		return export.test
 		
 def create():
-	# calisma klasorunde kisayol olustur
+	""" calisma klasorunde kisayol olustur """
+
 
 def content(name):
 	
@@ -178,75 +182,82 @@ def content(name):
 		
 		glob.push(["Desktop Entry", None, None, None])
 		glob.index.entry = 0
+		
+		# set yada group yok iken
 		# calisma klasorunde kisayol olustur
+		
 		
 	else:
 		
 		items = [ item.strip('[') .strip(']') 
-		for item in open(glob.path).read().splitlines() if item  ] 
+		for item in open(glob.path).read().splitlines() 
+		if item  ] 
 		
 		
 		
 		for index, item in  enumerate(items):
 			
+			
+			""" select: entry or action """
+			
+			
+			
+			
 			if item.startswith('#'):
 				continue
 				
-			"""
-			Desktop Entry
-			Type=Application
-			Version=1.0
-			Name=test
-			Exec=geany %F
-			Icon=geany
-			Terminal=false
-			Categories=GTK;Development;IDE;
-			StartupNotify=true
-			Keywords=Text;Editor;
-			Desktop Action X
-			Name=test
-			
-			
-			"""
+
 			if item.startswith(glob.entry) or item.startswith(glob.action):
-				""" select: entry or action """
-				
 				
 				glob.select = item
 				
 				if item.startswith(glob.entry):
-					
-					
 					glob.push([item, None, None, None])
 					glob.index.entry = index
 					
-
-
 				elif item.startswith(glob.action):
 					
+					
+
 					glob.push([item, None, None, None])
 					glob.index.action = index
-					
-					
-					
 			else:
 				
-				key, value = item.split(chr(61))
-				
-
-				if key.find("[") > -1 and not key.find("]") > -1:
+				items = item.split(chr(61))
+				if "[" and "]" in  items [0]:
 					
-					glob.push([ glob.select, key [ key.find("[") + 1: key.find("]") ], key [ 0: key.find("[") ], value ])
 					
+					key, lang, value = items [0] [0: items[0].index("[")], items [0] [items[0].index("[")+1: items[0].index("]")], items [1] 
+					glob.push([ glob.select, lang, key, value ])
 					
 					
 				else:
-					glob.push([ glob.select, glob.LANGUAGE, key, value ])
+					glob.push([ glob.select, glob.LANGUAGE, items[0], items[1] ])
+	
 					
-
 	return Base
+	"""
 	
-	
+	[Desktop Entry]
+	Icon[zu]=test
+	Icon[yo]=test
+	Icon[yi]=test
+	Icon[xh]=test
+	Icon=test
+	Name[yo]=test
+	Name[zu]=test
+	Name[yi]=test
+	Name[xh]=test
+	Name=test
+	Exec=/usr/share/test/test
+	Type=Application
+	Categories=Network;InstantMessaging;
+	Path=/usr/bin
+	[Desktop Action X]
+	name=test
+
+	"""
+
 
 
 

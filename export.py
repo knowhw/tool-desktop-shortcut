@@ -10,10 +10,11 @@ class test:
 		"""
 		
 		[Desktop Entry]
-		Name=myApp
+		Name=Discord
+		StartupWMClass=discord
 		GenericName=Internet Messenger
-		Exec=/usr/share/test
-		Icon=test
+		Exec=/usr/share/discord/Discord
+		Icon=discord
 		Type=Application
 		Categories=Network;InstantMessaging;
 		Path=/usr/bin
@@ -22,76 +23,111 @@ class test:
 		
 		"""
 		
-		
-		for (base, lang,key, 
-	value ) in glob.context:
+		for items in glob.context:
 			
-			if lang is None and key is None and value is None: 
-				yield "[%s]" % (base)
+			if items:
+				# defactoring
 				
-			else:
+				base, lang,key, value = items
 				
-				if lang == glob.LANGUAGE: 
+				if lang is None and key is None and value is None: 
+					yield "[%s]" % (base)
 					
-						yield "%s=%s" % (key, value)
-				else: yield "%s[%s]=%s" % (key, lang, value)
+				else:
+					
+					if lang == glob.LANGUAGE: 
+						
+							yield "%s=%s" % (key, value)
+					else: yield "%s[%s]=%s" % (key, lang, value)
 				
 	def group(key, value, base):
 		
-
+		
+		base = getattr(glob, base.__name__)
+		
+		
+		gl = [  item  for item in glob.context 
+		if item [0:3] == [ base, glob.LANGUAGE, key ] ]
+		# glob.LANGUAGE isExists
+		
+		
+		
+		if not gl: glob.insert( glob.index.entry+1, [ base, glob.LANGUAGE, key, value ])
+		# glob.LANGUAGE not Exists
+		
 		"""
 		
 		[Desktop Entry]
-		Name[xh]=uvavanyo
-		Name[yi]=פּרובירן
-		Name[yo]=idanwo
-		Name[zu]=test
-		Name=test
-		GenericName=Internet Messenger
-		Exec=/usr/share/test
-		Icon=test
-		Type=Application
 		Categories=Network;InstantMessaging;
+		Type=Application
 		Path=/usr/bin
+		Icon=test
+		Name[yo]=test
+		Name[zu]=myapp
+		Name[yi]=מיין אַפּ
+		Name[xh]=myapp
+		Name=test
+
+		[Desktop Action X]
+		name=test
 		
 		
 		"""
 		
-		googleapis = "/translate_a/single?client=gtx&dt=t&"
-		query = "http://translate.googleapis.com%ssl=auto&tl=%s&q=%s"
-		
-		
-		
-		for lang in [ item.get(glob._) for item in glob.lang.findall('name') if item.get(glob._) ]:
-		
-		
-			base, lang, key = [ getattr(glob, "entry"), lang, key ]
-			exists = [  item for item in glob.context if item [0:3] == [ base, lang, key ] ]
-		
-		
-			if not exists:
-				
-				
-				query = query % (googleapis, lang, value)
-				response = glob.loads(glob.urllib.request.urlopen(query).read()) [-9][-1][0]
-				# base, lang, key, value
-				
-				index = [  index for index, item in enumerate(glob.context) 
-				if  item [0] == base and item [1] == glob.LANGUAGE and item [2] == key ]
-				
-				
-				
-				glob.insert( index [0], [ base, lang, key, response ])
-				# print(base, lang, key, response)
+		index = [  index for index, item in enumerate(glob.context) 
+		if  item [0] == base and item [1] == glob.LANGUAGE and item [2] == key ] [0]
+		# index: gl.index
 
+
+		
+		langs = [ item.get(glob._) 
+		for item in glob.lang.findall('name') 
+		if item.get(glob._) ]
+		
+
+		for lang in langs: 
+			
+			# 132 world languages
+			
+			"""
+			
+			[mk]=test
+			[hi]=test
+			[lb]=test
+			[lg]=test
+			[lt]=test
+			[ln]=test
+			[lv]=test
+			[la]=test
+			[lo]=test
+			[ky]=test
+			
+			.
+			..
+			...
+			
+			"""
+			
+			items = [  item for item in glob.context 
+			if item [0:3] == [ base, lang, key ] ]
+			
+			
+			if not items:
+					
+				googleapis = "/translate_a/single?client=gtx&dt=t&"
+				query = "http://translate.googleapis.com%ssl=auto&tl=%s&q=%s" % (googleapis, lang, value)
+				
+				res = glob.loads(glob.urllib.request.urlopen(query).read()) [-9][-1][0]
+				# res: value
+				
+				glob.insert( index, [ base, lang, key, res ])
+				
+
+				
 		return test
-		
-		
+
 	def string(key=None, value=None, base=None, index=None, action=None):
-		# export.test.string(key, value, base=None, index=index, action=action)
-		
-		
-		
+
 		if action:
 			
 			action = "%s %s" % (glob.action, action)
@@ -126,13 +162,18 @@ class test:
 		else:
 			
 			if not index is not None:
-				glob.context.insert(glob.index.entry + 1, [glob.entry, glob.LANGUAGE, key, value] )
-				""" key yoksa """
+				items = glob.entry, glob.LANGUAGE, key, value
+				
+				glob.context.insert(glob.index.entry + 1, list(items) )
+				# tuple: [['Desktop Entry', None, None, None], ('Desktop Entry', 'en_US', 'Name', 'myapp')]
+				# list: defactoring
+				
+				""" not found key """
 			else:
 				
 
 				glob.context[index][-1] = value
-				""" key varsa """
+				""" found key """
 				
 		return test
 	

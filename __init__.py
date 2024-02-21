@@ -1,10 +1,12 @@
-# https://youtu.be/IvXphJ9Ouxc?t=1795
+
 
 from desktop import glob
 from desktop import export
 # from desktop import translate
 
-	
+from desktop import temp
+
+
 class desktop:
 
 	def path(name):
@@ -30,8 +32,8 @@ class desktop:
 		return dictionary.get(name)
 		
 class getitem(dict):
-	def __getitem__(self, key):
-		return super().__getitem__(key) if key in self else None
+	def __getitem__(self, kelime):
+		return super().__getitem__(kelime) if kelime in self else None
 class desk:
 	
 	class entry:
@@ -162,78 +164,96 @@ class Base:
 			desk.entry.set(key=key, value=value)
 	
 		return export.test
+		
+def create():
+	# calisma klasorunde kisayol olustur
+	content="[Desktop Entry]"
+	
+	
+	return content
 def content(name):
 	
 	
-	glob.path = desktop.path(name)
-	
-			
-			
-	items = [ item.strip('[') .strip(']') 
-	for item in open(glob.path).read().splitlines() if item  ]
+	glob.path = desktop.path(name) 
 	
 	
-	for index, item in  enumerate(items):
+	if not glob.path:
 		
-		if item.startswith('#'):
-			continue
-			
-		"""
-		Desktop Entry
-		Type=Application
-		Version=1.0
-		Name=Geany
-		Exec=geany %F
-		Icon=geany
-		Terminal=false
-		Categories=GTK;Development;IDE;
-		StartupNotify=true
-		Keywords=Text;Editor;
-		Desktop Action test
-		Name=Geany
+		glob.push(["Desktop Entry", None, None, None])
+		glob.index.entry = 0
+		# calisma klasorunde kisayol olustur
+		
+	else:
+		
+		items = [ item.strip('[') .strip(']') 
+		for item in open(glob.path).read().splitlines() if item  ] 
 		
 		
-		"""
-		if item.startswith(glob.entry) or item.startswith(glob.action):
-			""" select: entry or action """
+		
+		for index, item in  enumerate(items):
+			
+			if item.startswith('#'):
+				continue
+				
+			"""
+			Desktop Entry
+			Type=Application
+			Version=1.0
+			Name=Geany
+			Exec=geany %F
+			Icon=geany
+			Terminal=false
+			Categories=GTK;Development;IDE;
+			StartupNotify=true
+			Keywords=Text;Editor;
+			Desktop Action test
+			Name=Geany
 			
 			
-			glob.select = item
-			
-			if item.startswith(glob.entry):
-				glob.push([item, None, None, None])
-				glob.index.entry = index
+			"""
+			if item.startswith(glob.entry) or item.startswith(glob.action):
+				""" select: entry or action """
 				
 				
+				glob.select = item
+				
+				if item.startswith(glob.entry):
+					
+					
+					glob.push([item, None, None, None])
+					glob.index.entry = index
+					
 
-			elif item.startswith(glob.action):
-				
-				glob.index.action = index
-				glob.push([item, None, None, None])
-				
-				
-		else:
-			
-			key, value = item.split(chr(61))
-			
 
-			if key.find("[") > -1 and not key.find("]") > -1:
-				
-				glob.push([ glob.select, key [ key.find("[") + 1: key.find("]") ], key [ 0: key.find("[") ], value ])
-				
-				
-				
+				elif item.startswith(glob.action):
+					
+					glob.push([item, None, None, None])
+					glob.index.action = index
+					
+					
+					
 			else:
-				glob.push([ glob.select, glob.LANGUAGE, key, value ])
+				
+				key, value = item.split(chr(61))
+				
+
+				if key.find("[") > -1 and not key.find("]") > -1:
+					
+					glob.push([ glob.select, key [ key.find("[") + 1: key.find("]") ], key [ 0: key.find("[") ], value ])
+					
+					
+					
+				else:
+					glob.push([ glob.select, glob.LANGUAGE, key, value ])
+					
 
 	return Base
 	
 	
 
 
-def create():
-	""" calisma klasorunde kisayol olustur """
-	
 
 	
 
+  
+	

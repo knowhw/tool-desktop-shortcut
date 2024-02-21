@@ -10,11 +10,10 @@ class test:
 		"""
 		
 		[Desktop Entry]
-		Name=Discord
-		StartupWMClass=discord
+		Name=myApp
 		GenericName=Internet Messenger
-		Exec=/usr/share/discord/Discord
-		Icon=discord
+		Exec=/usr/share/test
+		Icon=test
 		Type=Application
 		Categories=Network;InstantMessaging;
 		Path=/usr/bin
@@ -48,10 +47,9 @@ class test:
 		Name[yo]=idanwo
 		Name[zu]=test
 		Name=test
-		StartupWMClass=discord
 		GenericName=Internet Messenger
-		Exec=/usr/share/discord/Discord
-		Icon=discord
+		Exec=/usr/share/test
+		Icon=test
 		Type=Application
 		Categories=Network;InstantMessaging;
 		Path=/usr/bin

@@ -1,4 +1,4 @@
-# https://youtu.be/IvXphJ9Ouxc?t=4110
+# https://www.youtube.com/watch?v=hxsld16TjSU
 # pip install translate
 
 

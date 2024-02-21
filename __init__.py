@@ -1,7 +1,12 @@
 
+
 from desktop import glob
 from desktop import export
 # from desktop import translate
+
+from desktop import temp
+
+
 class desktop:
 
 	def path(name):
@@ -108,7 +113,7 @@ class desk:
 			
 			[Desktop Entry]
 			Name=test
-			Icon=geany
+			Icon=face-heart
 			[Desktop Action test]
 			Name=test
 			Icon=test
@@ -162,10 +167,7 @@ class Base:
 		
 def create():
 	# calisma klasorunde kisayol olustur
-	content="[Desktop Entry]"
-	
-	
-	return content
+
 def content(name):
 	
 	
@@ -194,15 +196,15 @@ def content(name):
 			Desktop Entry
 			Type=Application
 			Version=1.0
-			Name=Geany
+			Name=test
 			Exec=geany %F
 			Icon=geany
 			Terminal=false
 			Categories=GTK;Development;IDE;
 			StartupNotify=true
 			Keywords=Text;Editor;
-			Desktop Action test
-			Name=Geany
+			Desktop Action X
+			Name=test
 			
 			
 			"""

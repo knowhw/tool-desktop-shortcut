@@ -2,7 +2,7 @@
 
 # from desktop import content
 
-# desk = content("discord")
+# desk = content("myapp")
 
 # solutions 1
 

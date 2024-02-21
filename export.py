@@ -55,18 +55,6 @@ class test:
 		if not gl: glob.insert( glob.index.entry+1, [ base, glob.LANGUAGE, key, value ])
 		# glob.LANGUAGE not Exists
 		
-		"""
-		
-		[Desktop Entry]
-		Categories=Network;InstantMessaging;
-		Type=Application
-		Path=/usr/bin
-		Name=test
-		[Desktop Action X]
-		name=test
-		
-		
-		"""
 		
 		index = [  index for index, item in enumerate(glob.context) 
 		if  item [0] == base and item [1] == glob.LANGUAGE and item [2] == key ] [0]

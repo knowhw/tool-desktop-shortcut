@@ -1,10 +1,7 @@
-# https://youtu.be/_SfB348JGIA?list=RDGMEMJQXQAmqrnmK1SEjY_rKBGA&t=24
-
 
 from desktop import glob
 from desktop import export
 # from desktop import translate
-
 class desktop:
 
 	def path(name):

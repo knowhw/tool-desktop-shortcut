@@ -1,3 +1,4 @@
+# https://youtu.be/_SfB348JGIA?list=RDGMEMJQXQAmqrnmK1SEjY_rKBGA&t=24
 
 
 from desktop import glob

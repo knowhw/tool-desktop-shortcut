@@ -239,10 +239,6 @@ def content(name):
 	"""
 	
 	[Desktop Entry]
-	Icon[zu]=test
-	Icon[yo]=test
-	Icon[yi]=test
-	Icon[xh]=test
 	Icon=test
 	Name[yo]=test
 	Name[zu]=test

@@ -61,13 +61,7 @@ class test:
 		Categories=Network;InstantMessaging;
 		Type=Application
 		Path=/usr/bin
-		Icon=test
-		Name[yo]=test
-		Name[zu]=myapp
-		Name[yi]=מיין אַפּ
-		Name[xh]=myapp
 		Name=test
-
 		[Desktop Action X]
 		name=test
 		

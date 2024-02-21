@@ -114,7 +114,7 @@ class desk:
 			[Desktop Action test]
 			Name=test
 			Icon=test
-			[Desktop Action globalAI]
+			[Desktop Action X]
 			Name=test
 			Exec=/usr/bin/test
 			

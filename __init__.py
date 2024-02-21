@@ -4,9 +4,6 @@ from desktop import glob
 from desktop import export
 # from desktop import translate
 
-from desktop import temp
-
-
 class desktop:
 
 	def path(name):

@@ -1,5 +1,5 @@
 
-from auzef.listdir import glob
+from listdir import glob
 
 def application():
 

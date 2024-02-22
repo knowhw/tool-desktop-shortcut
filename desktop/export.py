@@ -1,6 +1,6 @@
 
-from auzef.desktop import glob
-import auzef.temp
+from desktop import glob
+import temp
 
 class test:		
 	

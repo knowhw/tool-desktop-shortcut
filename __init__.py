@@ -1,40 +1,25 @@
 
 
-from desktop import glob
-from desktop import export
-# from desktop import translate
-
-from desktop import temp
+from auzef.desktop import glob
+from auzef.desktop import export
+from auzef.listdir import application
 
 
 class desktop:
 
 	def path(name):
 		
-		import os
+		listdir = application()
+		# usr/share/applications
 		
-		
-		# global path_desktop_items
-		path_desktop_items = [ os.path.realpath(item) 
-		for item in os.listdir(glob.appdir) ]
-
-		dictionary = {}
-		""" dictionary: app list => usr share applications """
-		
-		
-		for item in path_desktop_items:
-			
-			name2, extension = os.path.splitext(os.path.basename(item))
-			
-			dictionary [name2] = '%s/%s%s' % (glob.appdir, name2, extension)
-			""" 'path':'%s/%s%s' % (glob.appdir, Exec, extension) """
-		
-		return dictionary.get(name)
+		return listdir.get(name)
 		
 class getitem(dict):
 	def __getitem__(self, key):
 		return super().__getitem__(key) if key in self else None
 class desk:
+	
+	# content = ""
 	
 	class entry:
 		
@@ -83,10 +68,14 @@ class desk:
 			return desk.entry.pop(key)
 			
 		def get(key):
+			
 			getext =  [ item for item in glob.context 
-			if [glob.entry, glob.LANGUAGE, key] == item [0:3]] [0]
+			if [glob.entry, glob.LANGUAGE, key] == item [0:3]] 
 			# ['Desktop Entry', 'en_US', 'Icon', 'geany']
-			base, lang, key, value = getext
+			
+			base, lang, key, value = getext [0] if getext else [None]*4
+			# [None]*4 -> defactoring
+			# when not found key
 			
 			return value
 			
@@ -239,6 +228,10 @@ def content(name):
 	"""
 	
 	[Desktop Entry]
+	Icon[zu]=test
+	Icon[yo]=test
+	Icon[yi]=test
+	Icon[xh]=test
 	Icon=test
 	Name[yo]=test
 	Name[zu]=test

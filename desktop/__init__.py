@@ -1,8 +1,8 @@
 
 
-from auzef.desktop import glob
-from auzef.desktop import export
-from auzef.listdir import application
+from desktop import glob
+from desktop import export
+from listdir import application
 
 
 class desktop:

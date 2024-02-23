@@ -192,7 +192,7 @@ def content(name):
 	
 	
 	Q: When the content module is used together with another module (application) 
-	the same result a returning !
+	the same result are returning !
 	
 	
 	sample: 
@@ -201,11 +201,11 @@ def content(name):
 		info = content(item).entry.get("Name")
 		
 		output: geany
-				geany
-				geany
-				...
-				..
-				.
+			geany
+			geany
+			...
+			..
+			.
 				
 
 	solution:

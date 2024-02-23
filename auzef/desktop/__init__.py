@@ -5,6 +5,7 @@ from auzef.desktop import export
 from auzef.listdir import application
 
 
+
 class desktop:
 
 	def path(name):
@@ -68,6 +69,7 @@ class desk:
 			return desk.entry.pop(key)
 			
 		def get(key):
+			
 			
 			getext =  [ item for item in glob.context 
 			if [glob.entry, glob.LANGUAGE, key] == item [0:3]] 
@@ -135,6 +137,9 @@ class desk:
 				
 			return glob
 		def get(key):
+			
+			
+			
 			getext =  [ item for item in glob.context 
 			if ["%s %s" % (glob.action, desk.action.base.key), glob.LANGUAGE, key] == item [0:3]] [0]
 			# ['Desktop Action test', 'en_US', 'Icon', 'geany']
@@ -161,12 +166,54 @@ def create():
 	""" calisma klasorunde kisayol olustur """
 
 
+
+
 def content(name):
 	
 	
 	glob.path = desktop.path(name) 
 	
+	# solution
+	del glob.context [:]
 	
+	"""
+	
+	solutions:
+	
+	a) close open files.
+	b) F2C
+	c) del context
+	d) one class
+	
+	
+	
+	application: system module
+	content: testing
+	
+	
+	Q: When the content module is used together with another module (application) 
+	the same result a returning !
+	
+	
+	sample: 
+	
+	for item in application():
+		info = content(item).entry.get("Name")
+		
+		output: geany
+				geany
+				geany
+				...
+				..
+				.
+				
+
+	solution:
+	
+	del glob.context [:]
+	
+	"""
+
 	if not glob.path:
 		
 		glob.push(["Desktop Entry", None, None, None])
@@ -178,20 +225,16 @@ def content(name):
 		
 	else:
 		
-		items = [ item.strip('[') .strip(']') 
+		
+		items = [  item.strip('[') .strip(']') 
 		for item in open(glob.path).read().splitlines() 
 		if item  ] 
 		
 		
 		
-		for index, item in  enumerate(items):
-			
-			
+		for index, item in enumerate(items):
 			""" select: entry or action """
-			
-			
-			
-			
+
 			if item.startswith('#'):
 				continue
 				
@@ -222,9 +265,10 @@ def content(name):
 					
 				else:
 					glob.push([ glob.select, glob.LANGUAGE, items[0], items[1] ])
-	
 					
-	return Base
+					
+	return Base			
+	
 	"""
 	
 	[Desktop Entry]

@@ -32,8 +32,9 @@ test = desk.entry.set(key="Name", value="myapp")
 ## #Group Key
 
 ```py
-desk.entry.set(key="Exec", value="/usr/share/myapp/test")
-test = desk.entry.group(key="Name", value="myapp")
+desk.entry.group(key="Name", value="myapp")
+test = desk.entry.set(key="Exec", value="/usr/share/myapp/test")
+
 
 ```
 

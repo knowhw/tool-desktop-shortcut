@@ -1,7 +1,6 @@
 
 
 
-```
 
 ##  #Solution 1 [set]
 ```py

@@ -12,11 +12,11 @@ desk = content("myapp")
 desk.Entry ["Exec"] = "/usr/share/myapp/test"
 desk.Entry ["Name"] = "myapp"
 
-test = desk.set()
+
 ```
 
 ```py
-test = desk.action.set(key="Name", value="test", action="X")
+test = desk.set()
 ```
 
 

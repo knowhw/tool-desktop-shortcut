@@ -44,7 +44,7 @@ for item in test.print_file():
     print(item)
 ````
 
-## Sample Output [/usr/share/applications/MyApp.desktop]
+## Sample Output [/usr/share/applications/myapp.desktop]
 ```
 [Desktop Entry]
 Name[zu]=isicelo sami

@@ -1,14 +1,5 @@
 
 
-
-
-
-~~~bash
-git clone https://github.com/knowhw/tool-desktop-shortcut.git
-~~~
-
-
-
 ## #Module usage
 ```py
 from au.desktop import content

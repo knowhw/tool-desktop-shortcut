@@ -183,8 +183,8 @@ Name[ar]=طلبي
 Name[am]=የእኔ-መተግበሪያ
 Name[sq]=aplikimi im
 Name[af]=my-toepassing
-Name=Geany
-Icon=geany
+Name=myapp
+Icon=face-heart
 Terminal=false
 Categories=GTK;GNOME;Utility;
 

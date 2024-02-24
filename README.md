@@ -1,7 +1,15 @@
 
-This module provides functions to read, write, and manipulate desktop files used in Linux desktop environments "desktop" extension files are used to define application shortcuts and are commonly used to create icons on the desktop in Linux desktop environments.
 
 
+
+
+~~~bash
+git clone https://github.com/knowhw/tool-desktop-shortcut.git
+~~~
+
+
+
+## #Module usage
 ```py
 from au.desktop import content
 desk = content("myapp")

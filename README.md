@@ -1,13 +1,12 @@
 
 
-## #Module usage
-```py
-from au.desktop import content
-desk = content("myapp")
+
 ```
 
 ##  #Solution 1 [set]
 ```py
+from au.desktop import content
+desk = content("myapp")
 
 desk.Entry ["Exec"] = "/usr/share/myapp/test"
 desk.Entry ["Name"] = "myapp"

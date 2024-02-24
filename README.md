@@ -24,13 +24,10 @@ test = desk.set()
 ```py
 
 desk.entry.set(key="Exec", value="/usr/share/myapp/test")
-desk.entry.set(key="Name", value="myapp")
+test = desk.entry.set(key="Name", value="myapp")
 
 ```
 
-```py
-test = desk.action.set(key="Name", value="test", action="X")
-```
 
 ## #Group Key
 

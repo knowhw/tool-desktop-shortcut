@@ -4,14 +4,14 @@
 
 ```py
 from au.desktop import content
-desk = content("MyApp")
+desk = content("myapp")
 ```
 
 ##  #Solution 1 [set]
 ```py
 
 desk.Entry ["Exec"] = "/usr/share/myapp/test"
-desk.Entry ["Name"] = "MyApp"
+desk.Entry ["Name"] = "myapp"
 
 
 ```
@@ -25,7 +25,7 @@ test = desk.action.set(key="Name", value="test", action="X")
 ```py
 
 desk.entry.set(key="Exec", value="/usr/share/myapp/test")
-desk.entry.set(key="Name", value="MyApp")
+desk.entry.set(key="Name", value="myapp")
 
 ```
 
@@ -37,7 +37,7 @@ test = desk.action.set(key="Name", value="test", action="X")
 
 ```py
 
-test = desk.entry.group(key="Name", value="MyApp")
+test = desk.entry.group(key="Name", value="myapp")
 
 ```
 

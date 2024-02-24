@@ -34,8 +34,7 @@ test = desk.action.set(key="Name", value="test", action="X")
 
 ```py
 
-desk.entry.group(key="Name", value="MyApp")
-test = desk.entry.set(key="Icon", value="face-heart")
+test = desk.entry.group(key="Name", value="MyApp")
 
 ```
 
@@ -45,7 +44,7 @@ for item in test.print_file():
     print(item)
 ````
 
-## Sample Output
+## Sample Output [/usr/share/applications/MyApp.desktop]
 ```
 [Desktop Entry]
 Exec=/usr/share/myapp/test

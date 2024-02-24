@@ -49,7 +49,7 @@ for item in test.print_file():
 [Desktop Entry]
 Exec=/usr/share/myapp/test
 Name=myapp
-Icon=face-heart
+
 [Desktop Action X]
 Name=test
 ```

@@ -30,7 +30,7 @@ for item in test.print_file():
 ```
 [Desktop Entry]
 
-Name=Discord
+Name=Bix
 Exec=/usr/share/app/bix
 Icon=bix
 Type=Application

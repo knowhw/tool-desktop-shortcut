@@ -7,8 +7,6 @@
 from au.desktop import content
 
 
-# solution
-
 desk = content("geany")
 
 desk.entry.set(key="Icon", value="face-heart")

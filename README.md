@@ -5,9 +5,8 @@
 ##  #Solution
 ```py
 from au.desktop import content
-
-
 desk = content("geany")
+
 
 desk.Entry ["Icon"] = "face-heart"
 desk.Entry ["Type"] = "Application"

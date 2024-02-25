@@ -43,7 +43,7 @@ Name=test
 
 ```
 
-<hr>
+## #What is that now!
 
 Bu modül, Linux masaüstü ortamlarında kullanıcıların kısayolları etkin bir şekilde yönetmelerini sağlayarak kullanıcı deneyimini artırır ve masaüstü iş akışlarını optimize eder.
 Kullanıcılar, modülü kendi uygulamalarına entegre ederek özelleştirilmiş masaüstü kısayol yönetimi çözümleri oluşturabilirler.

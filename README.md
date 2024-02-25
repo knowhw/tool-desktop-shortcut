@@ -1,21 +1,24 @@
 
-Bu modül, kullanıcıların kendi kısayollarını oluşturmasına, düzenlemesine ve yönetmesine olanak tanırken, masaüstü deneyimini kişiselleştirmelerini sağlar.
+Bu modül, kullanıcıların kendi kısayollarını oluşturmasına, düzenlemesine ve yönetmesine olanak tanır, 
+
+<br/>masaüstü deneyimini kişiselleştirmelerini sağlar.
+</br>
 
 
 ##  #Solution
 ```py
 from au.desktop import content
-desk = content("discord")
+desk = content("bix")
 
-desk.Entry ["Exec"] = "/usr/share/discord/Discord"
+desk.Entry ["Exec"] = "/usr/share/app/bix"
 
-desk.Entry ["Icon"] = "discord"
+desk.Entry ["Icon"] = "bix"
 desk.Entry ["Type"] = "Application"
 desk,Entry ["Terminal"] = "false"
 
 
 
-test = desk.entry.group(key="Name", value="Discord")
+test = desk.entry.group(key="Name", value="bix")
 
 for item in test.print_file():
 	print(item)
@@ -30,8 +33,8 @@ for item in test.print_file():
 [Desktop Entry]
 
 Name=Discord
-Exec=/usr/share/discord/Discord
-Icon=discord
+Exec=/usr/share/app/bix
+Icon=bix
 Type=Application
 Categories=Network;InstantMessaging;
 Path=/usr/bin

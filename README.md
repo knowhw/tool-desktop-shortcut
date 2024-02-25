@@ -5,42 +5,28 @@
 ##  #Solution 1 [set]
 ```py
 from au.desktop import content
-desk = content("myapp")
-
-desk.Entry ["Exec"] = "/usr/share/myapp/test"
-desk.Entry ["Name"] = "myapp"
 
 
-```
 
-```py
-test = desk.set()
-```
+# solution
 
+desk = content("geany")
 
-##  #Solution 2 [set]
-```py
-
-desk.entry.set(key="Exec", value="/usr/share/myapp/test")
-test = desk.entry.set(key="Name", value="myapp")
-
-```
+desk.entry.set(key="Icon", value="face-heart")
+desk.entry.group(key="Name", value="geany")
 
 
-## #Group Key
-
-```py
-desk.entry.group(key="Name", value="myapp")
-test = desk.entry.set(key="Exec", value="/usr/share/myapp/test")
+test = desk.entry.set(key="Exec", value="/usr/bin/test")
 
 
-```
 
-
-```py
 for item in test.print_file():
-    print(item)
-````
+	print(item)
+
+
+```
+
+
 
 ## Sample Output [/usr/share/applications/myapp.desktop]
 ```

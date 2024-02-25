@@ -13,9 +13,8 @@ desk.entry.set(key="Icon", value="face-heart")
 desk.entry.group(key="Name", value="geany")
 
 
+
 test = desk.entry.set(key="Exec", value="/usr/bin/test")
-
-
 
 for item in test.print_file():
 	print(item)

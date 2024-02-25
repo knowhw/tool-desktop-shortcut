@@ -1,7 +1,5 @@
 
-Bu modül, kullanıcıların kendi kısayollarını oluşturmasına, düzenlemesine ve yönetmesine olanak tanır, 
-masaüstü deneyimini kişiselleştirmelerini sağlar.
-</br>
+
 
 
 ##  #Solution
@@ -28,7 +26,7 @@ for item in test.print_file():
 
 
 
-## #Sample Output [/usr/share/applications/myapp.desktop]
+## #Sample Output [/usr/share/applications/bix.desktop]
 ```
 [Desktop Entry]
 
@@ -44,3 +42,17 @@ Name=test
 
 
 ```
+
+<hr>
+
+Bu modül, Linux masaüstü ortamlarında kullanıcıların kısayolları etkin bir şekilde yönetmelerini sağlayarak kullanıcı deneyimini artırır ve masaüstü iş akışlarını optimize eder.
+Kullanıcılar, modülü kendi uygulamalarına entegre ederek özelleştirilmiş masaüstü kısayol yönetimi çözümleri oluşturabilirler.
+
+Modülün ana özellikleri şunlardır:
+- Masaüstü kısayolları oluşturma, düzenleme, silme ve güncelleme.
+- Mevcut kısayolları yönetme.
+- Kısayolları kategorilere ayirma ve bu kategorileri yönetme.
+
+
+
+

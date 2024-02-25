@@ -164,7 +164,4 @@ Name=geany
 Icon=face-heart
 Terminal=false
 Categories=GTK;GNOME;Utility;
-
-[Desktop Action X]
-Name=test
 ```

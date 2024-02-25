@@ -1,5 +1,5 @@
 
-
+Bu modül, kullanıcıların kendi kısayollarını oluşturmasına, düzenlemesine ve yönetmesine olanak tanırken, masaüstü deneyimini kişiselleştirmelerini sağlar.
 
 
 ##  #Solution

@@ -7,7 +7,6 @@
 from au.desktop import content
 
 
-
 # solution
 
 desk = content("geany")

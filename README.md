@@ -9,20 +9,21 @@ masaüstü deneyimini kişiselleştirmelerini sağlar.
 from au.desktop import content
 desk = content("bix")
 
-desk.Entry ["Exec"] = "/usr/share/app/bix"
 
+desk.Entry ["Terminal"] = "false"
+desk.Entry ["Exec"] = "/usr/share/app/bix"
 desk.Entry ["Icon"] = "bix"
 desk.Entry ["Type"] = "Application"
-desk,Entry ["Terminal"] = "false"
 
 
 
+```
+
+```py
 test = desk.entry.group(key="Name", value="bix")
 
 for item in test.print_file():
 	print(item)
-
-
 ```
 
 

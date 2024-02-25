@@ -10,6 +10,8 @@ from au.desktop import content
 desk = content("geany")
 
 desk.entry.set(key="Icon", value="face-heart")
+desk.entry.set(key="Type", value="Application")
+desk.entry.set(key="Version", value="1.0")
 desk.entry.set(key="Categories", value="GTK;Development;IDE;")
 desk.entry.group(key="Name", value="geany")
 

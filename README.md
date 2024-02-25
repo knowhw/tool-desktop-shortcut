@@ -1,7 +1,6 @@
 
 Bu modül, kullanıcıların kendi kısayollarını oluşturmasına, düzenlemesine ve yönetmesine olanak tanır, 
-
-<br/>masaüstü deneyimini kişiselleştirmelerini sağlar.
+masaüstü deneyimini kişiselleştirmelerini sağlar.
 </br>
 
 

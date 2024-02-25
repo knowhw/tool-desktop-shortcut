@@ -10,6 +10,7 @@ from au.desktop import content
 desk = content("geany")
 
 desk.entry.set(key="Icon", value="face-heart")
+desk.entry.set(key="Categories", value="GTK;Development;IDE;")
 desk.entry.group(key="Name", value="geany")
 
 
@@ -27,6 +28,12 @@ for item in test.print_file():
 ## #Sample Output [/usr/share/applications/myapp.desktop]
 ```
 [Desktop Entry]
+Type=Application
+Version=1.0
+Terminal=false
+Categories=GTK;GNOME;Utility;
+Icon=face-heart
+Name=Geany
 Name[zu]=isicelo sami
 Name[yo]=mi-elo
 Name[yi]=מיין אַפּלאַקיישאַן
@@ -160,8 +167,4 @@ Name[ar]=طلبي
 Name[am]=የእኔ-መተግበሪያ
 Name[sq]=aplikimi im
 Name[af]=my-toepassing
-Name=geany
-Icon=face-heart
-Terminal=false
-Categories=GTK;GNOME;Utility;
 ```

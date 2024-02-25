@@ -5,8 +5,8 @@
 ##  #Solution
 ```py
 from au.desktop import content
-desk = content("geany")
 
+desk = content("geany")
 
 desk.Entry ["Icon"] = "face-heart"
 desk.Entry ["Type"] = "Application"
@@ -14,6 +14,8 @@ desk.Entry ["Version"] = "1.0"
 desk,Entry ["Terminal"] = "false"
 desk.Entry ["Categories"] = "GTK;Development;IDE;"
 desk.Entry ["Name"] = "geany"
+
+
 
 test = desk.entry.set(key="Exec", value="/usr/bin/test")
 

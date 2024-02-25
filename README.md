@@ -2,7 +2,7 @@
 
 
 
-##  #Solution 1 [set]
+##  #Solution
 ```py
 from au.desktop import content
 
@@ -160,7 +160,7 @@ Name[ar]=طلبي
 Name[am]=የእኔ-መተግበሪያ
 Name[sq]=aplikimi im
 Name[af]=my-toepassing
-Name=myapp
+Name=geany
 Icon=face-heart
 Terminal=false
 Categories=GTK;GNOME;Utility;

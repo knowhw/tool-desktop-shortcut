@@ -26,7 +26,7 @@ for item in test.print_file():
 
 
 
-## #Sample Output [/usr/share/applications/bix.desktop]
+## #Sample Output 
 ```
 [Desktop Entry]
 

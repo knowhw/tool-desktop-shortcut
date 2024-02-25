@@ -12,7 +12,6 @@ desk.Entry ["Exec"] = "/usr/share/discord/Discord"
 desk.Entry ["Icon"] = "discord"
 desk.Entry ["Type"] = "Application"
 desk,Entry ["Terminal"] = "false"
-desk.Entry ["Categories"] = "Network;InstantMessaging;"
 
 
 

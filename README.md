@@ -16,7 +16,7 @@ desk = content("bix")
 
 
 # desk.entry.group(key="Name", value="geany")
-# desk.entry.set(key="Icon", value="face-heart")
+desk.entry.set(key="Icon", value="face-heart")
 
 # desk.Entry ["Terminal"] = "false"
 

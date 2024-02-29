@@ -30,74 +30,50 @@ Keywords=Text;Editor;
 
 ```python
 
-from desktop import content
-
-# desk = content("myapp")
-
-# solutions 1
-
-# desk.Entry ["Icon"] = "face-heart"
-# desk.Entry ["Name"] = "myapp"
-
-# desk.Entry ["Exec"] = "/usr/share/myapp/test"
-
-# test = desk.set()
-
-# for item in test.print_file():
-#		print(item)
 
 
-# solutions 2
+from au.shortcuts import content
+import au.shortcuts
 
-# desk.entry.set(key="Name", value="myapp")
+
+# solution
+
+
+desk = content("geany")
+
+# desk.entry.group(key="Name", value="geany")
+# desk.entry.set(key="Icon", value="face-heart")
+# desk.entry.set(key="Exec", value="geany %F")
+
+desk.Entry ["Terminal"] = "false"
+#desk.entry.pop("Name")
+
+#icon = desk.entry.get("Icon")
+#print("get: %s" % icon )
+
+
 # desk.entry.set(key="Exec", value="/usr/share/myapp/test")
+# desk.entry.set(key="Name", value="bix")
 
-# test = desk.action.set(key="Name", value="test", action="X")
+desk.entry.pop(key="Categories")
+# desk.entry.set(key="Name", value="bix")
+#if not actions:
+# desk.entry.pop(key="Name")
 
+desk.action.group(key="Name", value="bix", action_key="X")
+#desk.entry.pop(key="Name")
 
-# for item in test.print_file():
-#	print(item)
+#desk.action.group(key="Name", value="bix", action_key="X")
+# desk.action.pop(key="Icon")
 
+#name = desk.action.get("Name", action_key="X")
+#print(name)
+	
+desk.action.popitem(key="Name")
 
-
-# solutions 3
-
-# desk.Entry ["Icon"] = "face-heart"
-# desk.Entry ["Name"] = "myapp"
-
-# desk.action.set(key="Name", value="test", action="X")
-
-# test = desk.set()
-
-
-# for item in test.print_file():
-#		print(item)
-
-
-
-
-
-# solutions 4
-
-# desk.entry.set(key="Name", value="myapp")
-# test = desk.action.set(key="Icon", value="myapp", action="X")
-
-# desk.entry.pop("Name")
-
-
-# for item in test.print_file():
-#		print(item)
-
-
-
-
-
-
-
-
-
-
-
+print(au.shortcuts.print_file())
+#for item in au.desktop.print_file():
+#print(item)
 
 ```
 

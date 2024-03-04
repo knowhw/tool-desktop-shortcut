@@ -1,11 +1,11 @@
 
-## Installation
+## #Installation
 ~~~bash
 git clone https://github.com/knowhw/tool-desktop-shortcut.git
 ~~~
 
 
-## Set Languages Codes
+## #Set Languages Codes
 ```bash
 export HELLO_WORLD='tr, bg, bh, bn, br, bs, ca mk, zh-CN, zh-TW'
 ```

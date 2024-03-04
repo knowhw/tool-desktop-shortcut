@@ -28,7 +28,6 @@ test.Entry ["Exec"] = "/usr/share/app/bix"
 test.Entry ["Icon"] = "yeap"
 test.Entry ["Type"] = "Application"
 
-test.Entry ["Path"] = "/usr/bin"
 test.Entry ["Categories"] = "InstantMessaging"
 
 test.action.group (key="Name", value="Yeap", action_key="X")
@@ -55,7 +54,6 @@ Name=Yeap
 Exec=/usr/share/app/bix
 Icon=yeap
 Type=Application
-Path=/usr/bin
 Categories=InstantMessaging
 [Desktop Action X]
 Name=Yeap

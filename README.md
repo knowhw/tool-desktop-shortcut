@@ -64,13 +64,9 @@ Name=Yeap
 
 ## What is that now!
 
-Bu modül, Linux masaüstü ortamlarında kullanıcıların kısayolları etkin bir şekilde yönetmelerini sağlayarak kullanıcı deneyimini artırır ve masaüstü iş akışlarını optimize eder.
-Kullanıcılar, modülü kendi uygulamalarına entegre ederek özelleştirilmiş masaüstü kısayol yönetimi çözümleri oluşturabilirler.
+This module enables users to effectively manage their shortcuts in Linux desktop environments, enhancing user experience and optimizing personal workflows. Users can get customized desktop solution management solutions by integrating them into their own module applications.
 
-Modülün ana özellikleri şunlardır:
-- Masaüstü kısayolları oluşturma, düzenleme, silme ve güncelleme.
-- Mevcut kısayolları yönetme.
-- Kısayolları kategorilere ayirma ve bu kategorileri yönetme.
+
 
 
 

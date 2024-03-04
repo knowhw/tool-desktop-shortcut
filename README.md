@@ -40,16 +40,25 @@ test.action.group (key="Name", value="Yeap", action_key="X")
 ## #Sample Output 
 ```
 [Desktop Entry]
-
+Name[tr]=Evet
+Name[bg]=да
+Name[bh]=हँ, हँ, हँ
+Name[bn]=হ্যাঁ
+Name[br]=None
+Name[bs]=Da
+Name[ca mk]=None
+Name[zh-CN]=是的
+Name[zh-TW]=是的
 Name=Yeap
 Exec=/usr/share/app/bix
-Icon=bix
+Icon=yeap
 Type=Application
-Categories=InstantMessaging;
 Path=/usr/bin
+Categories=InstantMessaging
 
 [Desktop Action X]
 Name=Yeap
+
 
 
 ```

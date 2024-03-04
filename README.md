@@ -5,13 +5,13 @@ git clone https://github.com/knowhw/tool-desktop-shortcut.git
 ~~~
 
 
-## #Set Languages Codes
+## Set Languages Codes
 ```bash
 export HELLO_WORLD='tr, bg, bh, bn, br, bs, ca mk, zh-CN, zh-TW'
 ```
 
 
-##  #Solution
+##  Solution
 ```py
 
 
@@ -36,7 +36,7 @@ test.action.group (key="Name", value="Yeap", action_key="X")
 
 
 
-## #Sample Output 
+## Sample Output 
 ```
 
 [Desktop Entry]

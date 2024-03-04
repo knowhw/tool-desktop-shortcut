@@ -41,14 +41,13 @@ test.entry.group (key="Name", value="Yeap")
 ```
 
 [Desktop Entry]
-Name[tr]=Evet
 Name[bg]=да
 Name[bh]=हँ, हँ, हँ
 Name[bn]=হ্যাঁ
-Name[br]=None
 Name[bs]=Da
 Name[ca]=sí
 Name[mk]=Да
+Name[tr]=Evet
 Name[zh-CN]=是的
 Name[zh-TW]=是的
 Name=Yeap

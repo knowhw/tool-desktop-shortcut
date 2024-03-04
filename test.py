@@ -8,14 +8,14 @@ import shortcuts
 test = Content("bix")
 # io.elementary.wingpanel
 
+# test.Entry ["OnlyShowIn"] = "GNOME;"
 # test.Entry ["Name"] = "Yeap"
 # test.Entry ["Icon"] = "yeap"
-# test.Entry ["Comment"] = "Get help with GNOME"
-# test.Entry ["OnlyShowIn"] = "GNOME;Unity;"
+# test.Entry ["Comment"] = "GNOME"
 # test.Entry ["StartupNotify"] = "true"
 # test.Entry ["Terminal"] = "false"
 # test.Entry ["Type"] = "Application"
-# test.Entry ["Categories"] = "GNOME;GTK"
+# test.Entry ["Categories"] = "GNOME"
 # test.Entry ["Actions"] = "X;"
 
 

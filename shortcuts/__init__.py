@@ -101,25 +101,17 @@ class test:
 			
 			
 			
-			for lang in [ item.get(glob._) 
-						for item in glob.lang.findall('name') 
-						if item.get(glob._) ]: 
-				
-				googleapis = "/translate_a/single?client=gtx&dt=t&"
-				query = "http://translate.googleapis.com%ssl=auto&tl=%s&q=%s" % (googleapis, lang, value)
+			for lang in [ item.strip() for item in glob.HELLO_WORLD. split(',') ]:  
+				#testing
 
-	
-	
-				
-				index = test.base.key.index('entry', key)
-	
 				if not [ item for item in glob.context if item [0:4] == [ glob.entry, None, lang, key ] ]:
 					#glob.loads(glob.urllib.request.urlopen(query).read()) [-9][-1][0]
 					
-					value = value if glob.check.i else value
-					
-					glob.context.insert(index [0], [ glob.entry, None, lang, key, value ])
+
+					index = test.base.key.index('entry', key)
+					glob.context.insert(index [0], [ glob.entry, None, lang, key, test.translateto(value, lang) if glob.check.i else value ])
 					# Thu Feb 29 19:21:01 CST 2024
+			
 
 					
 					# used was index [0] instead of [-1]

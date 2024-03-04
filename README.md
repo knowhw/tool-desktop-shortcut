@@ -42,7 +42,7 @@ test.entry.group (key="Name", value="Yeap")
 
 [Desktop Entry]
 Name[bg]=да
-Name[bh]=हँ, हँ, हँ
+Name[bh]=हँ
 Name[bn]=হ্যাঁ
 Name[bs]=Da
 Name[ca]=sí

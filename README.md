@@ -55,8 +55,6 @@ Exec=/usr/share/app/bix
 Icon=yeap
 Categories=InstantMessaging
 Type=Application
-
-
 [Desktop Action X]
 Name=Yeap
 

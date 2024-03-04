@@ -1,68 +1,55 @@
 
+## Installation
+~~~bash
+git clone https://github.com/knowhw/tool-desktop-shortcut.git
+~~~
 
+
+## Set Languages Codes
+```bash
+export HELLO_WORLD='tr, bg, bh, bn, br, bs, ca mk, zh-CN, zh-TW'
+```
 
 
 ##  #Solution
 ```py
 
 
-from au.shortcuts import content
-import au.shortcuts
-
-
-# solution
-
-desk = content("bix")
-
-
-# desk.entry.group(key="Name", value="geany")
-desk.entry.set(key="Icon", value="face-heart")
-
-# desk.Entry ["Terminal"] = "false"
-
-
-# icon = desk.entry.get("Icon")
-
-# name = desk.action.get("Name", action_key="X")
-
-# desk.entry.set(key="Exec", value="/usr/share/myapp/test")
-# desk.entry.set(key="Name", value="bix")
-
-# desk.entry.pop(key="Categories")
-# desk.action.popitem(key="Name")
-
-
-desk.action.group(key="Name", value="bix", action_key="X")
-# desk.entry.pop(key="Name")
-
-# desk.action.group(key="Name", value="bix", action_key="X")
-# desk.action.pop(key="Icon")
+from shortcuts import Key
+from shortcuts import Content
+import shortcuts
 
 
 
+test = Content("bix")
 
+test.Entry ["Name"] = "Yeap"
+test.Entry ["Exec"] = "/usr/share/app/bix"
+test.Entry ["Icon"] = "yeap"
+test.Entry ["Type"] = "Application"
 
-print(au.shortcuts.print_file())
+test.Entry ["Path"] = "/usr/bin"
+test.Entry ["Categories"] = "InstantMessaging"
 
-
-
+test.action.group (key="Name", value="Yeap", action_key="X")
 
 ```
+
 
 
 ## #Sample Output 
 ```
 [Desktop Entry]
 
-Name=Bix
+Name=Yeap
 Exec=/usr/share/app/bix
 Icon=bix
 Type=Application
-Categories=Network;InstantMessaging;
+Categories=InstantMessaging;
 Path=/usr/bin
 
 [Desktop Action X]
-Name=test
+Name=Yeap
 
 
 ```

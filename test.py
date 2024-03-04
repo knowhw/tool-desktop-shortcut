@@ -20,7 +20,7 @@ test = Content("bix")
 
 
 # test.action.set (key="Name", value="Yeap", action_key="X")
-# test.entry.set (key="Name", value="deneme")
+# test.entry.set (key="Name", value="Test")
 # test.action.group (key="Icon", value="Yeap", action_key="X")
 
 # test.action.group (key="Name", value="Yeap", action_key="Y")
@@ -38,7 +38,9 @@ test.LIFO
 
 
 
-# TODO: gozden gecirme ve kod iyilestirmesi....
+
+# TODO: gozden gecirme ve kod iyilestirmesi
+
 #1: TRANSLATE ortak func.
 #2: Entry Actions -> append action_key
 #3: LANG: value to text

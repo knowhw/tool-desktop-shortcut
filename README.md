@@ -30,8 +30,8 @@ test.Entry ["Type"] = "Application"
 
 test.Entry ["Categories"] = "InstantMessaging"
 
-test.action.group (key="Name", value="Yeap", action_key="X")
-test.action.group (key="Icon", value="yeap", action_key="X")
+test.entry.group (key="Name", value="Yeap")
+test.action.set (key="Name", value="Yeap", action_key="X")
 ```
 
 

@@ -54,8 +54,9 @@ Name[zh-TW]=是的
 Name=Yeap
 Exec=/usr/share/app/bix
 Icon=yeap
-Type=Application
 Categories=InstantMessaging
+Type=Application
+
 
 [Desktop Action X]
 Name=Yeap

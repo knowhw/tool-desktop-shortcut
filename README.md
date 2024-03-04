@@ -57,7 +57,8 @@ Icon=yeap
 Type=Application
 Categories=InstantMessaging
 
-
+[Desktop Action X]
+Name=Yeap
 
 
 ```

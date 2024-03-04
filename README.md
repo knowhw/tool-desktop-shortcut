@@ -4,7 +4,6 @@
 git clone https://github.com/knowhw/tool-desktop-shortcut.git
 ~~~
 
-## 
 
 
 ## Set Languages Codes [here]( gist.github.com/knowhw/0adeb98e98f319efe0b668697042a737 )
@@ -12,6 +11,7 @@ git clone https://github.com/knowhw/tool-desktop-shortcut.git
 export HELLO_WORLD='tr, bg, bh, bn, br, bs, ca mk, zh-CN, zh-TW'
 ```
 
+ 
 
 ##  Solution
 ```py

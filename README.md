@@ -1,5 +1,5 @@
 
-## #Installation
+## [Installation]( http://github.com/knowhw/tool-desktop-shortcut/tree/main?tab=readme-ov-file#installation ) 
 ~~~bash
 git clone https://github.com/knowhw/tool-desktop-shortcut.git
 ~~~
@@ -13,7 +13,7 @@ export HELLO_WORLD='tr, bg, bh, bn, br, bs, ca mk, zh-CN, zh-TW'
 
  
 
-##  Solution
+## [Solution]( http://github.com/knowhw/tool-desktop-shortcut/tree/main?tab=readme-ov-file#Solution )
 ```py
 
 

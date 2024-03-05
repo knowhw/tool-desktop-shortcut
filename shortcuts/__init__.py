@@ -488,20 +488,20 @@ class Base:
 			if items:
 				# defactoring
 				
-				base, lang,key, value = items
+				base, action_key, lang,key, value = items
 				
 				if lang is None and key is None and value is None: 
-					test.content+= "[%s]\n" % (base)
+					glob.content+= "[%s]\n" % (base)
 					
 				else:
 					
 					if lang == glob.LANGUAGE: 
 						
-							test.content+= "%s=%s\n" % (key, value)
+							glob.content+= "%s=%s\n" % (key, value)
 					else: 
-						test.content+= "%s[%s]=%s\n" % (key, lang, value)
+						glob.content+= "%s[%s]=%s\n" % (key, lang, value)
 
-		tempfile, name = au.temp.filetouch(test.content)
+		tempfile, name = temp.filetouch(glob.content)
 		tempfile.pkexec.mv2(glob.path)
 		
 		return glob

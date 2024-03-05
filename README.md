@@ -1,6 +1,9 @@
-![alt text]  ( https://github.com/knowhw/tool-desktop-shortcut/blob/main/image.png?raw=true   )
 
 
+
+
+ ![screenshot.pn](https://github.com/knowhw/tool-desktop-shortcut/blob/main/image.png) 
+ 
 
 ## #Installation
 ~~~bash

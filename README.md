@@ -43,8 +43,6 @@ test.entry.group (key="Name", value="Yeap")
 
 
 
-## Sample Output 
- ![screenshot.pn](https://github.com/knowhw/tool-desktop-shortcut/blob/main/image.png) 
 
 
 

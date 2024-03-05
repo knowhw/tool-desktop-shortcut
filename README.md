@@ -41,7 +41,15 @@ test.entry.group (key="Name", value="Yeap")
 
 ```
 
+```
+item = Key.getitem("Name")
+print(item.text)
+```
 
+```
+test = shortcuts.print_content()
+print(test)
+```
 
 
 

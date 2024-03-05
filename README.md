@@ -61,7 +61,7 @@ Name=Yeap
 
 ```
 
-## What is that now!
+## Shortly
 
 This module enables users to effectively manage their shortcuts in Linux desktop environments, enhancing user experience and optimizing personal workflows. Users can get customized desktop solution management solutions by integrating them into their own module applications.
 

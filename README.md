@@ -38,15 +38,17 @@ test.Entry ["Type"] = "Application"
 # Entry Group
 test.entry.group (key="Name", value="Yeap")
 
+# item pop
+# test.entry.popitem("Name")
 
-```
 
-```
-item = Key.getitem("Name")
-print(item.text)
-```
+# item get value
 
-```
+# item = Key.getitem("Name")
+# print(item.text)
+
+
+
 test = shortcuts.print_content()
 print(test)
 ```

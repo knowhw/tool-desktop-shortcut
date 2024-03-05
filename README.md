@@ -1,10 +1,5 @@
 
 
-
-
-
- 
-
 ## #Installation
 ~~~bash
 git clone https://github.com/knowhw/tool-desktop-shortcut.git
@@ -23,7 +18,6 @@ export HELLO_WORLD='bg, bh, bn, bs, ca, mk, tr, zh-CN, zh-TW'
 from shortcuts import Key
 from shortcuts import Content
 import shortcuts
-
 
 
 test = Content("bix")
@@ -46,7 +40,6 @@ test.entry.group (key="Name", value="Yeap")
 
 # item = Key.getitem("Name")
 # print(item.text)
-
 
 
 test = shortcuts.print_content()

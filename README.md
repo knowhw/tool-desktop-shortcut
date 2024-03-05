@@ -2,7 +2,7 @@
 
 
 
- ![screenshot.pn](https://github.com/knowhw/tool-desktop-shortcut/blob/main/image.png) 
+
  
 
 ## #Installation
@@ -44,28 +44,9 @@ test.entry.group (key="Name", value="Yeap")
 
 
 ## Sample Output 
-```
-
-[Desktop Entry]
-Name[bg]=да
-Name[bh]=हँ
-Name[bn]=হ্যাঁ
-Name[bs]=Da
-Name[ca]=sí
-Name[mk]=Да
-Name[tr]=Evet
-Name[zh-CN]=是的
-Name[zh-TW]=是的
-Name=Yeap
-Exec=/usr/share/app/bix
-Icon=yeap
-Categories=InstantMessaging
-Type=Application
-[Desktop Action X]
-Name=Yeap
+ ![screenshot.pn](https://github.com/knowhw/tool-desktop-shortcut/blob/main/image.png) 
 
 
-```
 
 ## Shortly
 

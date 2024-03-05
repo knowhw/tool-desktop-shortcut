@@ -32,11 +32,11 @@ test.Entry ["Type"] = "Application"
 # Entry Group
 test.entry.group (key="Name", value="Yeap")
 
-# item pop
+# Item pop
 # test.entry.popitem("Name")
 
 
-# item get value
+# Item get value
 
 # item = Key.getitem("Name")
 # print(item.text)

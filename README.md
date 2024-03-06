@@ -4,7 +4,7 @@
 This module enables users to effectively manage their shortcuts in Linux desktop environments, enhancing user experience and optimizing personal workflows. Users can get customized desktop solution management solutions by integrating them into their own module applications. [language codes]( http://gist.github.com/knowhw/0adeb98e98f319efe0b668697042a737 )
 
 
-## #Installation
+## Installation
 ~~~bash
 git clone https://github.com/knowhw/tool-desktop-shortcut.git
 ~~~

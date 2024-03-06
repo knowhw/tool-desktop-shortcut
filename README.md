@@ -1,4 +1,8 @@
 
+## Overview
+
+This module enables users to effectively manage their shortcuts in Linux desktop environments, enhancing user experience and optimizing personal workflows. Users can get customized desktop solution management solutions by integrating them into their own module applications. [languages code]( http://gist.github.com/knowhw/0adeb98e98f319efe0b668697042a737 )
+
 
 ## #Installation
 ~~~bash
@@ -6,7 +10,7 @@ git clone https://github.com/knowhw/tool-desktop-shortcut.git
 ~~~
 
 
-## Set [Language Codes]( http://gist.github.com/knowhw/0adeb98e98f319efe0b668697042a737 )
+## Set Language Codes
 ```bash
 export HELLO_WORLD='bg, bh, bn, bs, ca, mk, tr, zh-CN, zh-TW'
 ```
@@ -49,9 +53,6 @@ print(test)
 
 
 
-## Shortly
-
-This module enables users to effectively manage their shortcuts in Linux desktop environments, enhancing user experience and optimizing personal workflows. Users can get customized desktop solution management solutions by integrating them into their own module applications.
 
 
 

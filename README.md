@@ -52,7 +52,9 @@ print(test)
 
 <!-- This is commented out. 
 ## More Information
-- [Documentation](https://pillow.readthedocs.io/)-->
+- [Documentation](https://pillow.readthedocs.io/)
+- https://pillow.readthedocs.io/en/latest/handbook/concepts.html#size
+-->
 
 
 

@@ -24,10 +24,10 @@ from shortcut import Content
 import shortcut
 
 
-test = Content("bix")
+test = Content("yeap")
 
 test.Entry ["Name"] = "Yeap"
-test.Entry ["Exec"] = "/usr/share/app/bix"
+test.Entry ["Exec"] = "/usr/share/app/yeap"
 test.Entry ["Icon"] = "yeap"
 test.Entry ["Categories"] = "InstantMessaging"
 test.Entry ["Type"] = "Application"

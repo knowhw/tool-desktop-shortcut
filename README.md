@@ -19,9 +19,9 @@ export HELLO_WORLD='bg, bh, bn, bs, ca, mk, tr, zh-CN, zh-TW'
 ```py
 
 
-from desktop_file import Key
-from desktop_file import Content
-import desktop_file
+from shortcut import Key
+from shortcut import Content
+import shortcut
 
 
 test = Content("bix")
@@ -46,7 +46,7 @@ test.entry.group (key="Name", value="Yeap")
 # print(item.text)
 
 
-test = desktop_file.print_content()
+test = shortcut.print_content()
 print(test)
 ```
 
